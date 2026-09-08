@@ -1,5 +1,11 @@
 # EffectDelta
 
+Blast-radius **policy gate** for high-impact actions. Compares what the human asked for vs what is about to happen, then allow / ask a human / block.
+
+**In this repo:** a Python library with numeric rules (cardinality, destination, amount). Demos: 1 vs 5,000 email recipients; $50 vs $5,000 transfer. This is not an IAM console replacement.
+
+**Cloud analogue:** same pattern as IAM conditions, SCPs, and change tickets. Sit this check in front of `terraform apply`, a deploy, SES send, or a Step Functions state so a plan larger than what was approved cannot proceed.
+
 Gate **any action** (email, SQL, banking, media publish, code changes) by comparing:
 
 1. **What the human asked for** → Intent Effect Vector  
