@@ -125,10 +125,6 @@ Proposed action ► Domain Adapter Probe ─┘
 
 Adapters perform **non-mutating probes** (resolve mailing lists, estimate SQL row counts, expand file globs, measure diff scope) *before* the real side effect runs.
 
-## Resume bullet
-
-> Built **EffectDelta**, an open-source Python library that gates AI/human actions by comparing quantitative blast-radius effect vectors to user intent (email, banking, media, SQL, and code-change adapters).
-
 ## Development
 
 ```bash
